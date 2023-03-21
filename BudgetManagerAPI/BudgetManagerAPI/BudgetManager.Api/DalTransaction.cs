@@ -45,7 +45,7 @@ namespace BudgetManager.Api
                                         WHERE transaction_ID = @transactionId";
 
                 // Adiciona os parametros ao sql
-                _command.Parameters.Add("@amount", MySqlDbType.Double).Value = value.Amount;
+                _command.Parameters.Add("@amount", MySqlDbType.Decimal).Value = value.Amount;
                 _command.Parameters.Add("@categoryID", MySqlDbType.Int32).Value = value.CategoryID;
                 _command.Parameters.Add("@reference", MySqlDbType.String).Value = value.Reference;
                 _command.Parameters.Add("@date", MySqlDbType.DateTime).Value = value.Date;
@@ -54,7 +54,7 @@ namespace BudgetManager.Api
                 _command.Parameters.Add("@walletID", MySqlDbType.String).Value = value.WalletID;
                 _command.Parameters.Add("@transactionId", MySqlDbType.String).Value = value.ID;
 
-                // Recupera o Id do usu�rio cadastrado
+                // Recupera o Id do usuario cadastrado
                 value.ID = (int)_command.ExecuteScalar();
 
                 return true;
@@ -63,25 +63,25 @@ namespace BudgetManager.Api
 
         public Transaction Find(object id)
         {
-            using (MySqlCommand _command = _connection.CreateCommand())
-            {
-                _command.CommandText = "SELECT * FROM transaction where wallet_ID = @Id";
-                _command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            // using (MySqlCommand _command = _connection.CreateCommand())
+            // {
+            //     _command.CommandText = "SELECT * FROM transaction where wallet_ID = @Id";
+            //     _command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
 
-                using MySqlDataReader reader = _command.ExecuteReader();
-                if (reader.Read())
-                    return new Transaction
-                    {
-                        ID = reader.GetInt32(0),
-                        Reference = reader.GetString(1),
-                        Amount = reader.GetDecimal(2),
-                        Date = reader.GetDateTime(3),
-                        Comment = reader.GetString(4),
-                        TransactionType = reader.GetString(5),
-                        WalletID = reader.GetInt32(6),
-                        CategoryID = reader.GetInt32(7),
-                    };
-            }
+            //     using MySqlDataReader reader = _command.ExecuteReader();
+            //     if (reader.Read())
+            //         return new Transaction
+            //         {
+            //             ID = reader.GetInt32(0),
+            //             Reference = reader.GetString(1),
+            //             Amount = reader.GetDecimal(2),
+            //             Date = reader.GetDateTime(3),
+            //             Comment = reader.GetString(4),
+            //             TransactionType = reader.GetString(5),
+            //             WalletID = reader.GetInt32(6),
+            //             CategoryID = reader.GetInt32(7),
+            //         };
+            // }
             return null;
         }
 
@@ -120,7 +120,7 @@ namespace BudgetManager.Api
             var transactions = new List<Transaction>();
             using (MySqlCommand _command = _connection.CreateCommand())
             {
-                _command.CommandText = "SELECT transaction_ID, reference, amount, date, comment, transactionType, wallet_ID, category_ID FROM transaction WHERE transactionType = @type AND wallet_ID = @id";
+                _command.CommandText = "SELECT transaction_ID, reference, amount, date, comment, transactionType, wallet_ID, category_ID FROM transaction WHERE (transactionType = @type or @type=0) AND wallet_ID = @id";
                 _command.Parameters.Add("@type", MySqlDbType.Int32).Value = filter[0];
                 _command.Parameters.Add("@id", MySqlDbType.Int32).Value = filter[1];
 

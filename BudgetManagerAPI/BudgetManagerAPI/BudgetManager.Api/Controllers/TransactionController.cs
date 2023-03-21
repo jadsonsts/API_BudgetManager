@@ -34,5 +34,12 @@ namespace BudgetManager.Api.Controllers
         {
             return Dal.Insert(transaction);
         }
+
+        //TO BE CHECKED
+        // [HttpPut]
+        // public Transaction Put([FromBody]Transaction transaction)
+        // {
+        //     return Dal.Edit(transaction);
+        // }
     }
 }

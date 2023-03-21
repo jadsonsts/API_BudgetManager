@@ -42,5 +42,18 @@ namespace BudgetManager.Api.Controllers
         {
             return Dal.Insert(customer);
         }
+
+        /// <summary>
+        /// edita um cadastro de usuário
+        /// </summary>
+        /// <param name="customer"></param>
+        /// <returns></returns>
+
+        //TO BE CHECKED
+        // [HttpPut]
+        // public Customer Put([FromBody]Customer customer)
+        // {
+        //     return Dal.Edit(customer);
+        // }
     }
 }
