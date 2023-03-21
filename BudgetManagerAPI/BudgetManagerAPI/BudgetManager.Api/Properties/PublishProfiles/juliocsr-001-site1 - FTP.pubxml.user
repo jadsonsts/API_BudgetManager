@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://win8022.site4now.net:21/site1</_PublishTargetUrl>
+    <History>True|2023-02-22T00:36:59.1467162Z;False|2023-02-21T21:35:15.9593670-03:00;True|2023-02-21T21:29:09.4967658-03:00;True|2023-02-21T16:51:11.7823062-03:00;False|2023-02-21T16:49:57.4961578-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>02/21/2023 15:12:14</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>02/21/2023 21:31:12</publishTime>
+    </File>
+    <File Include="BouncyCastle.Crypto.dll">
+      <publishTime>10/19/2021 08:53:34</publishTime>
+    </File>
+    <File Include="comerr64.dll">
+      <publishTime>12/06/2022 16:13:38</publishTime>
+    </File>
+    <File Include="Google.Protobuf.dll">
+      <publishTime>10/26/2022 10:46:18</publishTime>
+    </File>
+    <File Include="gssapi64.dll">
+      <publishTime>12/06/2022 16:13:38</publishTime>
+    </File>
+    <File Include="BudgetManager.Api.deps.json">
+      <publishTime>02/21/2023 21:36:09</publishTime>
+    </File>
+    <File Include="BudgetManager.Api.dll">
+      <publishTime>02/21/2023 21:36:09</publishTime>
+    </File>
+    <File Include="BudgetManager.Api.exe">
+      <publishTime>02/21/2023 21:36:09</publishTime>
+    </File>
+    <File Include="BudgetManager.Api.pdb">
+      <publishTime>02/21/2023 21:36:09</publishTime>
+    </File>
+    <File Include="BudgetManager.Api.runtimeconfig.json">
+      <publishTime>02/21/2023 21:27:03</publishTime>
+    </File>
+    <File Include="K4os.Compression.LZ4.dll">
+      <publishTime>09/11/2020 22:11:58</publishTime>
+    </File>
+    <File Include="K4os.Compression.LZ4.Streams.dll">
+      <publishTime>09/11/2020 22:11:58</publishTime>
+    </File>
+    <File Include="K4os.Hash.xxHash.dll">
+      <publishTime>07/03/2019 17:39:02</publishTime>
+    </File>
+    <File Include="k5sprt64.dll">
+      <publishTime>12/06/2022 16:13:38</publishTime>
+    </File>
+    <File Include="krb5_64.dll">
+      <publishTime>12/06/2022 16:13:38</publishTime>
+    </File>
+    <File Include="krbcc64.dll">
+      <publishTime>12/06/2022 16:13:38</publishTime>
+    </File>
+    <File Include="Microsoft.OpenApi.dll">
+      <publishTime>08/29/2020 17:14:12</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.SystemEvents.dll">
+      <publishTime>10/18/2022 13:20:10</publishTime>
+    </File>
+    <File Include="MySql.Data.dll">
+      <publishTime>12/06/2022 16:23:00</publishTime>
+    </File>
+    <File Include="MySqlConnector.dll">
+      <publishTime>01/01/2023 18:32:02</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>10/17/2022 20:26:02</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/sni.dll">
+      <publishTime>07/12/2017 08:24:24</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/sni.dll">
+      <publishTime>07/12/2017 08:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/sni.dll">
+      <publishTime>07/12/2017 08:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll">
+      <publishTime>10/18/2022 13:23:26</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/System.Drawing.Common.dll">
+      <publishTime>10/18/2022 13:26:24</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>10/18/2022 13:28:06</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/System.Windows.Extensions.dll">
+      <publishTime>10/18/2022 13:26:26</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>10/17/2022 20:26:08</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.Swagger.dll">
+      <publishTime>10/16/2021 09:54:10</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerGen.dll">
+      <publishTime>10/16/2021 09:54:36</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerUI.dll">
+      <publishTime>10/16/2021 09:54:30</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>10/18/2022 13:24:16</publishTime>
+    </File>
+    <File Include="System.Data.SqlClient.dll">
+      <publishTime>10/17/2022 20:16:04</publishTime>
+    </File>
+    <File Include="System.Drawing.Common.dll">
+      <publishTime>10/18/2022 13:21:16</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>10/18/2022 13:20:10</publishTime>
+    </File>
+    <File Include="System.Security.Permissions.dll">
+      <publishTime>10/18/2022 13:23:04</publishTime>
+    </File>
+    <File Include="System.Windows.Extensions.dll">
+      <publishTime>10/18/2022 13:22:56</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>02/21/2023 21:36:21</publishTime>
+    </File>
+    <File Include="ZstdNet.dll">
+      <publishTime>12/06/2022 16:19:28</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

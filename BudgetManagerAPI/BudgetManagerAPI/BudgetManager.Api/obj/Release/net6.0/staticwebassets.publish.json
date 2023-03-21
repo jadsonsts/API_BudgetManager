@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "T1l+mQhB5fe+0d0XiZhPRvYyu1HCzqFdsiVXlMC2JJw=",
+  "Source": "BudgetManager.Api",
+  "BasePath": "_content/BudgetManager.Api",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
