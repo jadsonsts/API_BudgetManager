@@ -2090,24 +2090,27 @@
     ]
   },
   "packageFolders": {
-    "/Users/jadsoncarneiro/.nuget/packages/": {}
+    "C:\\Users\\julio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
+      "projectUniqueName": "C:\\Users\\julio\\Documents\\jsx-it-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
       "projectName": "BudgetManager.Api",
-      "projectPath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
-      "packagesPath": "/Users/jadsoncarneiro/.nuget/packages/",
-      "outputPath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/obj/",
+      "projectPath": "C:\\Users\\julio\\Documents\\jsx-it-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
+      "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\julio\\Documents\\jsx-it-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jadsoncarneiro/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2166,7 +2169,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

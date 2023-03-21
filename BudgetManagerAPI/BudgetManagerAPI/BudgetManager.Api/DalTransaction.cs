@@ -120,7 +120,7 @@ namespace BudgetManager.Api
             var transactions = new List<Transaction>();
             using (MySqlCommand _command = _connection.CreateCommand())
             {
-                _command.CommandText = "SELECT * FROM transaction WHERE transactionType = @type AND wallet_ID = @id";
+                _command.CommandText = "SELECT transaction_ID, reference, amount, date, comment, transactionType, wallet_ID, category_ID FROM transaction WHERE transactionType = @type AND wallet_ID = @id";
                 _command.Parameters.Add("@type", MySqlDbType.Int32).Value = filter[0];
                 _command.Parameters.Add("@id", MySqlDbType.Int32).Value = filter[1];
 
