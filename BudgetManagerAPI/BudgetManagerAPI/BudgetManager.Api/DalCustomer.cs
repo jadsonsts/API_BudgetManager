@@ -96,7 +96,7 @@ namespace BudgetManager.Api
             using (MySqlCommand _command = _connection.CreateCommand())
             {
                 // cria o comando sql
-                _command.CommandText = "INSERT INTO customer (firebase_ID, name, familyName, phone, email, profilePicture, isActive) VALUES (@firebaseID, @name, @familyName, @phone, @email, @profilePicture, @isActive) ;"; //SELECT LAST_INSERT_ID()
+                _command.CommandText = "INSERT INTO customer (firebase_ID, name, familyName, phone, email, profilePicture, isActive) VALUES (@firebaseID, @name, @familyName, @phone, @email, @profilePicture, @isActive); SELECT LAST_INSERT_ID();";
 
                 // Adiciona os parametros ao sql
                 _command.Parameters.Add("@firebaseId", MySqlDbType.String).Value = value.firebaseID;
@@ -108,7 +108,11 @@ namespace BudgetManager.Api
                 _command.Parameters.Add("@isActive",MySqlDbType.Bit).Value = value.isActive;
 
                 // Recupera o Id do usuário cadastrado
-                //value.Id = (int)_command.ExecuteScalar();
+                using (var reader = _command.ExecuteReader())
+                {
+                    if (reader.Read())
+                        value.Id = (int)reader.GetInt32(0);
+                }
 
                 return value;
             }
