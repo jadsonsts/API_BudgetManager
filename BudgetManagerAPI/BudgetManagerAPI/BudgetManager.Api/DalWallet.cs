@@ -39,7 +39,7 @@ namespace BudgetManager.Api
             Wallet wallet = null;
             using (MySqlCommand _command = _connection.CreateCommand())
             {
-                _command.CommandText = "SELECT * FROM wallet where customer_ID = @Id";
+                _command.CommandText = "SELECT wallet_ID, name, amount, customer_ID FROM wallet where customer_ID = @Id";
                 _command.Parameters.Add("@Id", MySqlDbType.Int32).Value = Customer_ID; 
                 using (MySqlDataReader reader = _command.ExecuteReader())
                 {
@@ -50,7 +50,7 @@ namespace BudgetManager.Api
                         {
                             WalletID = reader.GetInt32(0),
                             WalletName = reader.GetString(1),
-                            Amount = reader.GetDouble(2),
+                            Amount = reader.GetDecimal(2),
                             Customer_ID = reader.GetInt32(3),
                         };
                     }
@@ -70,14 +70,14 @@ namespace BudgetManager.Api
             using (MySqlCommand _command = _connection.CreateCommand())
             {
                 // cria o comando sql
-                _command.CommandText = "INSERT INTO wallet (name, amount, customer_ID) VALUES (@name, @amount, @Customer_ID) SELECT LAST_INSERT_ID();";
+                _command.CommandText = "INSERT INTO wallet (name, amount, customer_ID) VALUES (@name, @amount, @Customer_ID) ;"; //SELECT LAST_INSERT_ID()
 
                 // Adiciona os parametros ao sql
                 _command.Parameters.Add("@name", MySqlDbType.String).Value = value.WalletName;
-                _command.Parameters.Add("@amount", MySqlDbType.Double).Value = value.Amount;
+                _command.Parameters.Add("@amount", MySqlDbType.Decimal).Value = value.Amount;
                 _command.Parameters.Add("@Customer_ID", MySqlDbType.Int32).Value = value.Customer_ID;
 
-                value.WalletID = (int)_command.ExecuteScalar();
+                //value.WalletID = (int)_command.ExecuteScalar();
 
                 return value;
             }
