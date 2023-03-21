@@ -2095,11 +2095,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\julio\\Documents\\jsx-it-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
+      "projectUniqueName": "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
       "projectName": "BudgetManager.Api",
-      "projectPath": "C:\\Users\\julio\\Documents\\jsx-it-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
+      "projectPath": "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
       "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\julio\\Documents\\jsx-it-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\obj\\",
+      "outputPath": "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",

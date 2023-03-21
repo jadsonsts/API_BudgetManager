@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hlyIACP8zpDV8ekZXA99aJAXot/FpzG/FzOlZsQOOFXfUFWAA7Tg8IaIJ3Y/eMoAihSrv5db2rNwK/XcxIkGNA==",
+  "dgSpecHash": "2LLvPweDmGwDTgnKvW/tVsPTpKq5PBzuq1ZOxGcMYxNNmgYlu1omtTvg+0cyGBu3g70/fHrXz1x2orQ+ndZOXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julio\\Documents\\jsx-it-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
+  "projectFilePath": "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julio\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
