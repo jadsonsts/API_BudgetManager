@@ -70,14 +70,18 @@ namespace BudgetManager.Api
             using (MySqlCommand _command = _connection.CreateCommand())
             {
                 // cria o comando sql
-                _command.CommandText = "INSERT INTO wallet (name, amount, customer_ID) VALUES (@name, @amount, @Customer_ID) ;"; //SELECT LAST_INSERT_ID()
+                _command.CommandText = "INSERT INTO wallet (name, amount, customer_ID) VALUES (@name, @amount, @Customer_ID); SELECT LAST_INSERT_ID();"; //
 
                 // Adiciona os parametros ao sql
                 _command.Parameters.Add("@name", MySqlDbType.String).Value = value.WalletName;
                 _command.Parameters.Add("@amount", MySqlDbType.Decimal).Value = value.Amount;
                 _command.Parameters.Add("@Customer_ID", MySqlDbType.Int32).Value = value.Customer_ID;
 
-                //value.WalletID = (int)_command.ExecuteScalar();
+                using (var reader = _command.ExecuteReader())
+                {
+                    if (reader.Read())
+                        value.WalletID = (int)reader.GetInt32(0);
+                }
 
                 return value;
             }
