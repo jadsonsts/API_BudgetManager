@@ -115,19 +115,19 @@
             "fileVersion": "1.4.5.0"
           },
           "lib/net6.0/comerr64.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "4.1.0.0"
           },
           "lib/net6.0/gssapi64.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "4.1.0.0"
           },
           "lib/net6.0/k5sprt64.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "4.1.0.0"
           },
           "lib/net6.0/krb5_64.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "4.1.0.0"
           },
           "lib/net6.0/krbcc64.dll": {
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "4.1.0.0"
           }
         }
       },
@@ -159,7 +159,7 @@
           "runtimes/win-arm64/native/sni.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "4.6.25512.1"
           }
         }
       },
@@ -168,7 +168,7 @@
           "runtimes/win-x64/native/sni.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "4.6.25512.1"
           }
         }
       },
@@ -177,7 +177,7 @@
           "runtimes/win-x86/native/sni.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "4.6.25512.1"
           }
         }
       },
