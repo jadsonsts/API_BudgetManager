@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj": {}
+    "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj": {
+    "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
+        "projectUniqueName": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
         "projectName": "BudgetManager.Api",
-        "projectPath": "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\BudgetManager.Api.csproj",
-        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\Documents\\jcandt-projects\\API_BudgetManager\\BudgetManagerAPI\\BudgetManagerAPI\\BudgetManager.Api\\obj\\",
+        "projectPath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
+        "packagesPath": "/Users/jadsoncarneiro/.nuget/packages/",
+        "outputPath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jadsoncarneiro/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
         }
       }
     }

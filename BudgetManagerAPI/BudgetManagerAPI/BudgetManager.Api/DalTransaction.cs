@@ -34,7 +34,7 @@ namespace BudgetManager.Api
             using (MySqlCommand _command = _connection.CreateCommand())
             {
                 // cria o comando sql
-                _command.CommandText = @"UPDATE transation
+                _command.CommandText = @"UPDATE transaction
                                         SET amount = @amount
                                           , category_ID = @categoryID
                                           , reference = @reference
@@ -54,8 +54,12 @@ namespace BudgetManager.Api
                 _command.Parameters.Add("@walletID", MySqlDbType.String).Value = value.WalletID;
                 _command.Parameters.Add("@transactionId", MySqlDbType.String).Value = value.ID;
 
-                // Recupera o Id do usuario cadastrado
-                value.ID = (int)_command.ExecuteScalar();
+                // Recupera o Id da transaction cadastrada
+                using (var reader = _command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    value.ID = (int)reader.GetInt32(0);
+                }    
 
                 return true;
             }
@@ -90,7 +94,7 @@ namespace BudgetManager.Api
             using (MySqlCommand _command = _connection.CreateCommand())
             {
                 // cria o comando sql
-                _command.CommandText = "INSERT INTO transation (amount, category_ID, reference, date, comment, transactionType, wallet_ID) VALUES (@amount, @categoryID, @reference, @date, @comment, @transactionType, @walletID) SELECT LAST_INSERT_ID();";
+                _command.CommandText = "INSERT INTO transaction (amount, category_ID, reference, date, comment, transactionType, wallet_ID) VALUES (@amount, @categoryID, @reference, @date, @comment, @transactionType, @walletID); SELECT LAST_INSERT_ID();";
 
                 // Adiciona os parametros ao sql
                 _command.Parameters.Add("@amount", MySqlDbType.Double).Value = value.Amount;
@@ -102,7 +106,11 @@ namespace BudgetManager.Api
                 _command.Parameters.Add("@walletID", MySqlDbType.String).Value = value.WalletID;
 
                 // Recupera o Id do usuario cadastrado
-                value.ID = (int)_command.ExecuteScalar();
+                using (var reader = _command.ExecuteReader())
+                {
+                    if(reader.Read())
+                    value.ID = (int)reader.GetInt32(0);
+                }
 
                 return value;
             }

@@ -49,8 +49,13 @@ namespace BudgetManager.Api
                _command.Parameters.Add("@phone", MySqlDbType.String).Value = value.Phone;                           
                _command.Parameters.Add("@profilePicture", MySqlDbType.String).Value = value.ProfilePicture;
                _command.Parameters.Add("@customer_ID",MySqlDbType.Int32).Value = value.Id;
-
-               value.Id = (int)_command.ExecuteScalar();
+                
+                
+                using (var reader = _command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    value.Id = (int)reader.GetInt32(0);
+                }
 
                return true;                           
             }

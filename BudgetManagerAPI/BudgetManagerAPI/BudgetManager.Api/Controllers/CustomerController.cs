@@ -49,11 +49,11 @@ namespace BudgetManager.Api.Controllers
         /// <param name="customer"></param>
         /// <returns></returns>
 
-        //TO BE CHECKED
-        // [HttpPut]
-        // public Customer Put([FromBody]Customer customer)
-        // {
-        //     return Dal.Edit(customer);
-        // }
+        
+        [HttpPut]
+        public bool Put([FromBody]Customer customer)
+        {
+            return Dal.Edit(customer);
+        }
     }
 }
