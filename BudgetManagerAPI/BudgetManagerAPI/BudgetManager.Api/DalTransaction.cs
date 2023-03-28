@@ -16,12 +16,27 @@ namespace BudgetManager.Api
 
         public bool Delete(Transaction value)
         {
-            throw new NotImplementedException();
+
+            throw new NotImplementedException(); 
         }
 
         public bool Delete(object id)
         {
-            throw new NotImplementedException();
+            int transactionId = Convert.ToInt32(id);
+            using (MySqlCommand _command = _connection.CreateCommand())
+            {
+             // creates the sql command
+            _command.CommandText = @"DELETE FROM transaction
+                                WHERE transaction_ID = @transactionId";
+
+            // Adds the parameter to sql
+            _command.Parameters.Add("@transactionId", MySqlDbType.Int32).Value = transactionId;
+
+             // Executes the delete command
+            int rowsAffected = _command.ExecuteNonQuery();
+
+                return rowsAffected > 0;
+            } 
         }
 
         public void Dispose()
@@ -54,14 +69,10 @@ namespace BudgetManager.Api
                 _command.Parameters.Add("@walletID", MySqlDbType.String).Value = value.WalletID;
                 _command.Parameters.Add("@transactionId", MySqlDbType.String).Value = value.ID;
 
-                // Recupera o Id da transaction cadastrada
-                using (var reader = _command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    value.ID = (int)reader.GetInt32(0);
-                }    
+                // Executes the update command
+                int rowsAffected = _command.ExecuteNonQuery();
 
-                return true;
+                return rowsAffected > 0;
             }
         }
 

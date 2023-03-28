@@ -41,5 +41,11 @@ namespace BudgetManager.Api.Controllers
         {
             return Dal.Edit(transaction);
         }
+
+        [HttpDelete("{id}")]
+        public bool Delete(int id)
+        {
+            return Dal.Delete(id);
+        }
     }
 }

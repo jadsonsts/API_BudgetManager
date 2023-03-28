@@ -51,13 +51,10 @@ namespace BudgetManager.Api
                _command.Parameters.Add("@customer_ID",MySqlDbType.Int32).Value = value.Id;
                 
                 
-                using (var reader = _command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    value.Id = (int)reader.GetInt32(0);
-                }
+                // Executes the update command
+                int rowsAffected = _command.ExecuteNonQuery();
 
-               return true;                           
+                return rowsAffected > 0;                        
             }
         }
 
