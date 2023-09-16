@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+tBtPpCbTSs0OxKIwOBQAlOyT+MPfyxlDX8qoBRyno9YEfl5Q5XDqHno3tR9Qz99ghgordjCwij1bQLQfE7SJA==",
+  "dgSpecHash": "kqNoHKRNObWDz3aA9hlquBEY/zFqhlUUxAYsa0aISHqxgUX1xPcQP/+BvLvkpviTC9Vp9uvKR9dp67Oz5UxXxg==",
   "success": true,
-  "projectFilePath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
+  "projectFilePath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps-Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
   "expectedPackageFiles": [
     "/Users/jadsoncarneiro/.nuget/packages/google.protobuf/3.21.9/google.protobuf.3.21.9.nupkg.sha512",
     "/Users/jadsoncarneiro/.nuget/packages/k4os.compression.lz4/1.2.6/k4os.compression.lz4.1.2.6.nupkg.sha512",

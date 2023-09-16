@@ -30,7 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection(); temporally removed so it doesn't redirect to the https (removed due to certificate)
 
 app.UseAuthorization();
 

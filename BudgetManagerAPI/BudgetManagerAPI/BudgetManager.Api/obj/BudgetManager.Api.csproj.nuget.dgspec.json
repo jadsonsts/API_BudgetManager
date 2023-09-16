@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj": {}
+    "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps-Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj": {}
   },
   "projects": {
-    "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj": {
+    "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps-Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
+        "projectUniqueName": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps-Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
         "projectName": "BudgetManager.Api",
-        "projectPath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
+        "projectPath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps-Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/BudgetManager.Api.csproj",
         "packagesPath": "/Users/jadsoncarneiro/.nuget/packages/",
-        "outputPath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps - Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/obj/",
+        "outputPath": "/Users/jadsoncarneiro/Desktop/iOS-Dev/Apps-Projetos/SGD/BudgetManagerAPI/BudgetManagerAPI/BudgetManagerAPI/BudgetManager.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jadsoncarneiro/.nuget/NuGet/NuGet.Config"
